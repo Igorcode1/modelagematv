@@ -1,45 +1,55 @@
-# Engenharia de Requisitos - Cartografia Participativa Quilombola
+# 📝 Caderno de Combinados do Nosso Mapa Quilombola
+## O que o sistema vai fazer (Funções) e como ele precisa funcionar (Qualidades)
 
-Este documento apresenta a especificação de Requisitos Funcionais (RF) e Não Funcionais (RNF) para o sistema de Cartografia Participativa da comunidade quilombola de Itapecuru-Mirim, com foco na preservação da memória e alta usabilidade.
-
-## Requisitos Funcionais
-
-# Engenharia de Requisitos - Cartografia Participativa Quilombola
-## Especificação de Requisitos Funcionais (RF)
-
-A tabela abaixo descreve as funcionalidades do sistema, mapeadas com os seus respetivos identificadores formais, nomes descritivos, comportamentos esperados e criticidade para o negócio (Prioridade).
-
-| Identificador | Nome | Descrição | Prioridade |
-| :--- | :--- | :--- | :--- |
-| **RF-001** | Marcação de Pontos Culturais e Históricos | O sistema deve permitir que os moradores/utilizadores marquem geograficamente no mapa os locais sagrados, áreas de festas tradicionais, pontos de plantio e caminhos antigos. | **Alta** |
-| **RF-002** | Registo de Relatos Orais em Áudio | O sistema deve permitir a gravação direta ou o upload de ficheiros de áudio através de dispositivos móveis para associar as histórias contadas pelos anciãos aos pontos geográficos do mapa. | **Alta** |
-| **RF-003** | Upload de Acervo Fotográfico e Histórico | O sistema deve disponibilizar uma funcionalidade para carregar fotografias e imagens de documentos antigos, vinculando-as ao ponto geográfico correspondente. | **Média** |
-| **RF-004** | Linha do Tempo Integrada | O sistema deve oferecer uma visualização cronológica (linha do tempo) associada aos pontos mapeados para organizar e encadear os acontecimentos históricos da comunidade. | **Média** |
-| **RF-005** | Consulta e Navegação Pública | O sistema deve permitir que qualquer membro da comunidade navegue pelo mapa interativo e aceda livremente aos áudios, fotos e textos cadastrados. | **Alta** |
+Para que o projeto dê certo, dividimos as regras do nosso aplicativo em duas partes: **as coisas que ele precisa fazer na tela** e **o jeito que ele precisa funcionar** para não deixar ninguém de fora.
 
 ---
 
-### Critérios de Atribuição de Prioridade (Padrão de Engenharia)
-* **Alta (Essencial):** Funcionalidades indispensáveis, sem as quais o sistema não cumpre o seu propósito core de Cartografia Participativa (Core MVP).
-* **Média (Importante):** Funcionalidades que adicionam grande valor de contextualização histórica e documental, mas que podem ser implementadas numa segunda fase de desenvolvimento.
-* **Baixa (Desejável):** Funcionalidades de melhoria estética ou otimizações secundárias (não aplicadas nesta tabela base).
+## 🌾 Parte 1: O que o aplicativo vai FAZER (Nossas Funções)
 
-## Requisitos Não-Funcionais
+A tabela abaixo mostra tudo o que o aplicativo vai ter dentro dele. O que for **Urgente** tem que estar pronto logo; o que for **Importante** a gente faz logo em seguida.
 
-# Engenharia de Requisitos - Cartografia Participativa Quilombola
-## Especificação de Requisitos Não Funcionais (RNF) com Critérios de Verificação
-
-A tabela abaixo apresenta os requisitos não funcionais acrescidos dos **Critérios de Aceitação/Verificação**. Na Engenharia de Requisitos, estes critérios são fundamentais porque transformam descrições subjetivas (como "sistema leve" ou "interface simples") em metas numéricas e testáveis pela equipa de Controle de Qualidade (QA).
-
-| Identificador | Categoria (ISO 25010) | Nome | Descrição | Prioridade | Critérios de Aceitação / Verificação |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **RNF-001** | Usabilidade (Operabilidade) | Interface de Alta Usabilidade (Foco em Idosos) | A interface do sistema deve ser extremamente simples e intuitiva, contendo botões grandes, ícones ilustrativos e poucos passos para a execução de tarefas, garantindo o uso por anciãos com baixa literacia digital. | **Alta** | • O fluxo principal de marcação de pontos não deve exceder **3 cliques/toques** desde a tela inicial.<br>• Todos os elementos interativos (botões) devem ter uma área de toque mínima de **48x48px**.<br>• 100% dos ícones de navegação devem possuir um rótulo de texto descritivo logo abaixo ou ao lado. |
-| **RNF-002** | Usabilidade (Acessibilidade) | Mecanismos de Acessibilidade Visual | O sistema deve possuir suporte nativo para alto contraste e controlo de tamanho de fonte, garantindo que os elementos textuais sejam legíveis para pessoas com dificuldades visuais. | **Alta** | • O sistema deve atingir a conformidade nível **AA da WCAG 2.1**.<br>• No modo de alto contraste, a proporção de contraste entre texto e fundo deve ser de, no mínimo, **7:1**.<br>• O redimensionamento do texto deve permitir um aumento de até **200%** sem quebrar o layout ou sobrepor elementos. |
-| **RNF-003** | Eficiência de Desempenho | Otimização para Conexões Lentas | O sistema deve ser leve e realizar a compressão automática de imagens e áudios no upload, além de utilizar carregamento sob demanda (*lazy loading*), para operar eficientemente em redes rurais 3G/4G instáveis. | **Alta** | • O tempo de carregamento da página inicial não deve passar de **5 segundos** em conexões simuladas de 3G (300 Kbps).<br>• Imagens carregadas devem ser compactadas automaticamente no cliente (browser/app) para um tamanho máximo de **200 KB** antes do envio ao servidor.<br>• O consumo de dados de áudio deve ser otimizado através da conversão para o formato `.ogg` ou `.aac` de baixa taxa de bits. |
-| **RNF-004** | Portabilidade (Adaptabilidade) | Design Totalmente Responsivo | O sistema deve ser planeado e otimizado prioritariamente para ecrãs/telas de dispositivos móveis (smartphones), assegurando a fidelidade visual e facilidade de toque. | **Alta** | • O sistema não deve apresentar barras de rolagem horizontal em resoluções de tela a partir de **320px** de largura.<br>• Passar sem erros na ferramenta oficial *Lighthouse (Mobile)* da Google com nota de desempenho/acessibilidade superior a **90/100**. |
+| Nome Simples | O que essa função faz na prática? | Importância para Nós |
+| :--- | :--- | :--- |
+| **Marcar a Nossa Terra** | Deixa o morador escolher um lugar e marcar no mapa onde fica um canto sagrado, área de festa tradicional, a roça ou um caminho antigo. | **Urgente (Principal)** |
+| **Gravar as Histórias dos Mais Velhos** | Deixa o jovem gravar a voz dos anciãos direto pelo celular para que a história deles fique colada no ponto certo do mapa. | **Urgente (Principal)** |
+| **Guardar Fotos e Documentos Antigos** | Deixa a gente tirar foto de papéis antigos ou retratos guardados e colocar no mapa para todo mundo ver o passado daquele lugar. | **Importante** |
+| **A Linha do Tempo da Comunidade** | Mostra os acontecimentos do quilombo em ordem, como se fosse uma estrada do tempo, contando o que veio primeiro e o que veio depois. | **Importante** |
+| **Todo Mundo Pode Ver e Ouvir** | Garante que qualquer pessoa da comunidade consiga mexer no mapa, ouvir os áudios e ver as fotos livremente, sem complicação. | **Urgente (Principal)** |
 
 ---
 
-### Importância desta coluna para o projeto:
-* **Testabilidade:** O programador sabe exatamente o limite técnico que deve atingir (ex: comprimir a imagem para menos de 200 KB).
-* **Homologação com a Comunidade:** Facilita a criação de testes de usabilidade reais com os anciãos da comunidade de Itapecuru-Mirim, validando se eles conseguem fechar o fluxo em até 3 toques na tela do telemóvel.
+## 📱 Parte 2: O JEITO que o aplicativo tem que funcionar (Qualidades)
+
+Não adianta o aplicativo ser bonito se ele for difícil de mexer ou se travar na roça. Por isso, criamos regras duras para o pessoal que cria o programa (os desenvolvedores) seguir. Veja como vamos testar se o trabalho deles ficou bom:
+
+### 👴 1. Muito Fácil de Usar (Foco nos Mais Velhos)
+* **Como tem que ser:** A tela tem que ser muito simples. O aplicativo precisa ter botões bem grandes, desenhos fáceis de entender e poucos passos para fazer as coisas.
+* **O teste para ver se ficou bom:** 
+  * Para marcar um ponto no mapa, o morador não pode precisar dar mais do que **3 toques na tela** desde a hora que abre o aplicativo.
+  * Todos os botões têm que ser grandes, do tamanho da ponta do dedão, para ninguém errar o clique.
+  * Todo desenho ou ícone precisa ter uma palavra escrita do lado explicando o que ele faz.
+
+### 👓 2. Bom para Quem Tem Dificuldade de Enxergar
+* **Como tem que ser:** O aplicativo precisa deixar as letras grandes e as cores bem fortes para ajudar quem tem a vista cansada ou problemas para ler.
+* **O teste para ver se ficou bom:**
+  * O aplicativo tem que aceitar o "Modo de Cores Fortes", onde o texto fica bem escuro e o fundo bem claro (ou o contrário), facilitando a leitura no sol da roça.
+  * O morador tem que conseguir aumentar o tamanho da letra no celular em até **duas vezes mais (200%)** sem que as palavras embaralhem ou sumam da tela.
+
+### 🌐 3. Leve e Rápido (Funciona com Internet Fraca)
+* **Como tem que ser:** O aplicativo precisa ser muito leve. Ele tem que diminuir o peso das fotos e áudios sozinho antes de enviar, para funcionar bem mesmo quando a internet 3G ou 4G estiver caindo ou bem devagarzinha na roça.
+* **O teste para ver se ficou bom:**
+  * A primeira tela do mapa tem que abrir em menos de **5 segundos**, mesmo com aquela internet bem fraca de chip de celular.
+  * Quando alguém colocar uma foto pesada, o próprio aplicativo vai encolher o tamanho dela na hora para ela gastar pouca internet.
+  * Os áudios de voz vão ser guardados num formato bem econômico, para carregar rápido sem gastar os créditos do morador.
+
+### 📲 4. Feito Direto para o Celular
+* **Como tem que ser:** O aplicativo tem que ser desenhado pensando primeiro na tela do celular, que é o que todo mundo usa na comunidade no dia a dia.
+* **O teste para ver se ficou bom:**
+  * O mapa tem que caber inteirinho na tela do celular de pé, sem que a pessoa precise ficar arrastando para os lados para conseguir ler o texto.
+  * O sistema vai passar por um teste no computador dos técnicos e precisa tirar uma nota quase perfeita (mais de 90 de 100) em rapidez e facilidade de acesso no celular.
+
+---
+
+## 💡 5. NOSSA SOLUÇÃO (O Resultado Final)
+Juntando todos esses combinados, a solução que vamos entregar é um **Mapa Vivo, Falante e Comunitário**. Ele vai ser o guardião das memórias de Itapecuru-Mirim, feito pelo próprio povo. No final, teremos uma ferramenta que funciona sem internet no meio do mato, que os mais velhos conseguem usar tocando na tela para ouvir as histórias do passado, e que as lideranças podem usar para provar para os governantes o que a comunidade tem de riqueza e o que está precisando de melhoria (como postos de saúde e escolas).

@@ -1,22 +1,22 @@
-# 📍 Trilha 1: Mapa Quilombola (Itapecuru-Mirim e Região)
+# 📍 Trilha 1: O Mapa do Nosso Quilombo (Itapecuru-Mirim e Região)
 
 ---
 
-### 🔍 1. O Problema
-* **Desafio Central:** Invisibilidade demográfica e territorial.
-* **Cenário Atual:** Dados socioeconômicos, culturais e geográficos sobre as comunidades quilombolas estão dispersos, desatualizados ou são escassos.
+### 🔍 1. O Problema (O Aperto que a Gente Passa)
+* **Desafio Central:** A nossa comunidade parece invisível para quem olha de fora.
+* **Cenário Atual:** As informações sobre quem somos, onde moramos, nossa cultura e nossa história estão espalhadas, velhas ou quase ninguém conhece.
 
-### 👥 2. Público-Alvo
-* **Diretamente Afetados:** Moradores e lideranças quilombolas locais.
-* **Usuários Indiretos:** Gestores públicos, pesquisadores acadêmicos e organizações da sociedade civil (ONGs).
+### 👥 2. Público-Alvo (Quem Tá com a Gente)
+* **Quem Mais Precisa:** Os moradores, as famílias e as lideranças das nossas comunidades aqui da região.
+* **Quem Também Vai Usar:** Pessoal do governo (para trazer melhorias), pesquisadores que estudam nossa história e pessoas que defendem os direitos das comunidades.
 
-### 💡 3. Justificativa & Impacto
-* **Garantia de Direitos:** Dados confiáveis fundamentam processos de titulação de terras.
-* **Políticas Públicas:** Base essencial para reivindicar melhorias em infraestrutura, saúde e educação no campo.
-* **Memória:** Preservação da identidade e do patrimônio cultural.
+### 💡 3. Justificativa & Impacto (Por Que Isso Importa?)
+* **Garantia de Direitos:** Ter dados certos e confiáveis ajuda muito na hora de lutar pelo documento de posse da nossa terra.
+* **Melhorias para o Povo:** Fica mais fácil cobrar do governo escolas melhores, postos de saúde perto de casa, estradas boas e água encanada.
+* **Nossa Memória:** Ajuda a guardar para sempre a nossa identidade, nossas festas e a riqueza da nossa cultura.
 
-### 🛠️ 4. Solução Proposta (Software)
-**Plataforma de Mapeamento Participativo (WebGIS)**
-* **Georreferenciamento:** Mapeamento geográfico das comunidades no território.
-* **Diagnóstico Local:** Cadastro de infraestrutura existente (escolas, postos de saúde, acessibilidade).
-* **Empoderamento:** Painéis (dashboards) e relatórios visuais prontos para lideranças utilizarem em pleitos governamentais.
+### 🛠️ 4. Solução Proposta (O que vai nascer desse projeto)
+**Um Mapa Digital e Falante da Nossa Comunidade**
+* **Marcar Nossa Terra:** Um mapa no celular ou computador mostrando onde fica cada pedaço do nosso território.
+* **Mostrar Como Vivemos:** Um cadastro simples que mostra o que a comunidade tem e o que está faltando (como escola viva, posto de saúde ou internet).
+* **Dar Voz às Lideranças:** Telas fáceis de mexer com gráficos, desenhos e relatórios prontos. Assim, quando a liderança for falar com o prefeito ou com o governo, já leva tudo provado no papel e na tela.
