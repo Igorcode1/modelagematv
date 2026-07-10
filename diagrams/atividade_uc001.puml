@@ -1,0 +1,47 @@
+@startuml
+title Diagrama de Atividades - Roteiro e Mapeamento do Quilombo
+
+' --- Configuração Visual Limpa ---
+skinparam BackgroundColor #FDFBF7
+skinparam ActivityBackgroundColor #FFFFFF
+skinparam ActivityBorderColor #4E342E
+skinparam ArrowColor #3E2723
+skinparam DiamondBackgroundColor #FFF3E0
+skinparam DiamondBorderColor #E65100
+
+' --- Início do Processo ---
+start
+
+:🎯 Definir o objetivo do projeto e os locais das rodas de conversa;
+:💡 Preparar os cadernos de campo e gravadores;
+
+' --- Ponto de Decisão: Organizar a escuta por grupo ---
+if (Qual grupo vai conversar agora?) then (Anciãos e Lideranças)
+    :📜 Contar as histórias da fundação e caminhos antigos;
+    :🥁 Indicar os lugares sagrados, festas e tambores;
+    :📁 Explicar como a memória é passada aos mais novos;
+else (Trabalhadores e Jovens)
+    :👨‍🌾 Explicar a lida na roça, pesca e sustento diário;
+    :📱 Apontar as dificuldades dos mais velhos com o celular;
+endif
+
+' --- Unificação e Registro ---
+:📝 Registrar tudo em áudio, fotos e anotações no caderno;
+
+' --- Ponto de Decisão: Validação Técnica do Território ---
+if (A internet funciona no local mapeado?) then (Sim)
+    :📶 Marcar ponto com sinal bom no mapa;
+else (Não)
+    :🚫 Marcar ponto onde o sinal some;
+    :💾 Configurar dados para funcionamento offline;
+endif
+
+' --- Entrega da Solução ---
+:🖥️ Juntar todas as pecinhas coletadas na comunidade;
+:🔊 Criar o Mapa Falante com botões grandes, desenhos e áudios;
+:🛡️ Guardar e proteger a história para as próximas gerações;
+
+' --- Fim do Processo ---
+stop
+
+@enduml
