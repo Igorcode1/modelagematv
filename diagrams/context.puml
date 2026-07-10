@@ -1,0 +1,19 @@
+@startuml context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+TITLE Diagrama de Contexto - Sistema Mapa Quilombola
+
+Person(user, "Líder Comunitário / Pesquisador", "Usuário autenticado que alimenta a memória e dados da comunidade.")
+Person(visitor, "Visitante Geral", "Qualquer cidadão que navega pelo mapa e consulta o acervo histórico.")
+
+System(mapa_quilombola, "Sistema Mapa Quilombola", "Plataforma web participativa para mapeamento geográfico e linha do tempo histórica das comunidades.")
+
+System_Ext(api_mapas, "API de Mapas (OpenStreetMap / Leaflet)", "Serviço externo usado para renderizar o mapa na tela e capturar coordenadas.")
+System_Ext(fundacao_palmares, "Cadastro Fundação Palmares", "Base de dados externa ou referência para validação do status de certificação institucional.")
+
+Rel(user, mapa_quilombola, "Cadastra comunidades e insere marcos temporais")
+Rel(visitor, mapa_quilombola, "Consulta o mapa interativo e relatos históricos")
+Rel(mapa_quilombola, api_mapas, "Consome tiles de mapas e plota coordenadas geográficas")
+Rel(mapa_quilombola, fundacao_palmares, "Consulta/Valida dados de certificação pública")
+
+@enduml
